@@ -8,6 +8,8 @@ import Login from "./pages/login/Login";
 import Products from "./pages/products/Products";
 import Users from "./pages/users/Users";
 import './styles/global.scss';
+import User from "./pages/user/User";
+import Product from "./pages/product/Product";
 
 function App() {
   const Layout = () => {
@@ -43,6 +45,14 @@ function App() {
         {
           path: '/products',
           element:<Products/>
+        },
+        {
+          path: '/users/:id',
+          element:<User />
+        },
+        {
+          path: '/products/:id',
+          element:<Product/>
         },
       ]
     },
